@@ -45,6 +45,27 @@ public class Main {
         String amountGivenToFriends="I gave each friend "+amountForEachFriend +"...";
         System.out.println(amountGivenToFriends);
 
+        int myNumber=14; //we will refer to myNumber as the original number from now on.
+        int stepOne=myNumber*myNumber;
+        int stepTwo=stepOne+myNumber;
+        int stepThree=stepTwo/myNumber;
+        int stepFour=stepThree+17;
+        int stepFive=stepFour-myNumber;
+        int stepSix=stepFive/6;
+
+        //Here we achieve the same results by using compound assignment operators
+        int magicNumber =myNumber*myNumber;
+        magicNumber +=myNumber;
+        magicNumber /=myNumber;
+        magicNumber +=17;
+        magicNumber -=myNumber;
+        magicNumber /=6;
+
+
+        System.out.println(magicNumber);
+
+        System.out.println(stepSix);
+
         /*String datatype store a string of characters in double quotations.
         *int datatype stores variables in whole numbers
         * double stores variables in decimals
